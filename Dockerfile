@@ -20,5 +20,5 @@ RUN apt-get update \
     && echo "deb ${DOCKER_APT_URI} debian-jessie main" \
             > /etc/apt/sources.list.d/docker.list \
     && apt-get update \
-    && apt-get install -y docker-engine=${DOCKER_VERSION}~jessie jq \
+    && apt-get install -y docker-engine=${DOCKER_VERSION}~jessie jq make \
     && rm -rf $CLEANUP_DIRS
